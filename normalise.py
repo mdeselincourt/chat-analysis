@@ -34,9 +34,12 @@ with codecs.open("../um21.txt", encoding='utf-8') as file:
 
             message = message.replace(":|","😐") # Neutral Face
             message = message.replace(";)","😉") # Winking Face
-            message = message.replace(":)","☺️") # Smiling Face
+            message = message.replace(":)","🙂") # Slightly Smiling Face
+            message = message.replace("☺","🙂") # Slightly Smiling Face
             message = message.replace(":(","🙁") # :( = Slightly Frowning Face
             message = message.replace("^^","😊") # ^^ = Smiling Face with Smiling Eyes
+            message = message.replace("☹","🙁") # :( = Slightly Frowning Face
+            
 
             # Cleanse remaining unfound pipes
             message = message.replace("|","")
